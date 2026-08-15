@@ -1,0 +1,92 @@
+# Bite More — Netlify configuration
+# Production host: https://bitemore.us
+
+[build]
+  publish = "."
+
+# ---------------------------------------------------------------
+# HOST CONSOLIDATION
+# One canonical host. www and the Netlify hostname both 301 to the apex.
+# These are safe to leave enabled: Netlify only applies a full-URL "from"
+# when the request actually arrives on that host, so no loop is possible
+# on bitemore.us itself.
+# ---------------------------------------------------------------
+[[redirects]]
+  from = "https://www.bitemore.us/*"
+  to = "https://bitemore.us/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://bite-more.netlify.app/*"
+  to = "https://bitemore.us/:splat"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------
+# LEGACY URL MIGRATION (old bitemore.us paths)
+# Verified from Apple Maps + Google's cached index of the old site.
+# A full Search Console export is still required for complete coverage.
+# ---------------------------------------------------------------
+[[redirects]]
+  from = "/location-buckhead"
+  to = "/buckhead"
+  status = 301
+[[redirects]]
+  from = "/location-duluth"
+  to = "/duluth"
+  status = 301
+[[redirects]]
+  from = "/our-menu"
+  to = "/menu"
+  status = 301
+[[redirects]]
+  from = "/gallery"
+  to = "/menu"
+  status = 301
+[[redirects]]
+  from = "/join-our-team"
+  to = "/careers"
+  status = 301
+[[redirects]]
+  from = "/gift-card"
+  to = "/gift-cards"
+  status = 301
+[[redirects]]
+  from = "/best-wings-buckhead"
+  to = "/wings-to-go"
+  status = 301
+[[redirects]]
+  from = "/dinner-buckhead"
+  to = "/buckhead"
+  status = 301
+
+# Build scripts and config must never be served
+[[redirects]]
+  from = "/site_config.py"
+  to = "/404.html"
+  status = 404
+[[redirects]]
+  from = "/apply_config.py"
+  to = "/404.html"
+  status = 404
+[[redirects]]
+  from = "/seo_prelaunch_check.py"
+  to = "/404.html"
+  status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[redirects]]
+  from = "/_build/*"
+  to = "/404.html"
+  status = 404

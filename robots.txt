@@ -1,0 +1,17 @@
+# Bite More — bitemore.us
+User-agent: *
+Allow: /
+
+# AI crawlers explicitly permitted
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://bitemore.us/sitemap.xml
