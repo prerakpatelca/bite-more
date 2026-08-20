@@ -520,9 +520,9 @@ img,video,iframe,table{max-width:100%}
 }
 
 /* --- tap targets: 44px minimum --- */
-.nav a.lnk,.nav .order,.foot-grid a,.taglist a,.crumbs a{min-height:44px;
+.nav a.lnk,.nav .order,.taglist a,.crumbs a{min-height:44px;
   display:inline-flex;align-items:center}
-.foot-grid a{padding:7px 0}
+
 .burger{min-width:44px;min-height:44px}
 
 /* --- mobile nav --- */
@@ -586,3 +586,74 @@ img,video,iframe,table{max-width:100%}
 /* --- forms: comfortable on mobile, no zoom-on-focus --- */
 .field input,.field select,.field textarea{font-size:16px;min-height:48px}
 .field textarea{min-height:120px}
+
+/* ==========================================================
+   FIXES — footer link stacking + playable review cards
+   ========================================================== */
+
+/* BUG: the 44px tap-target rule turned footer links into inline-flex,
+   so "Smash Burgers" and "Cajun Alfredo" ran together on one line.
+   Footer links must be block-level. */
+/* Footer links are block-level, one per line. Higher specificity than any
+   earlier rule so nothing can quietly turn them inline again. */
+.foot .foot-grid a,
+.foot-grid a{display:block;width:100%;min-height:44px;line-height:1.5;
+  padding:9px 0;text-decoration:none;color:var(--muted);font-size:14px}
+.foot .foot-grid a:hover{color:var(--orange)}
+
+/* comma-separated "known for" / "areas we serve" lists keep breathing room */
+.knownfor p a{display:inline;min-height:0}
+.knownfor p{line-height:2.1}
+
+/* review cards need a visible play control */
+.bm-video .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:4;
+  width:68px;height:68px;border-radius:50%;background:var(--orange);border:0;cursor:pointer;
+  display:grid;place-content:center;box-shadow:0 10px 34px rgba(0,0,0,.5);transition:transform .2s}
+.bm-video .play:hover{transform:translate(-50%,-50%) scale(1.08)}
+.bm-video .play::after{content:"";width:0;height:0;margin-left:5px;
+  border-left:20px solid #0B0B0B;border-top:13px solid transparent;border-bottom:13px solid transparent}
+.bm-video.playing .play,.bm-video.playing .bm-pending{display:none}
+.bm-video.playing .poster{opacity:0}
+.bm-video-missing video{display:none}
+.bm-video-missing .poster{opacity:1 !important}
+
+/* review/ambient cards: video fills the card, no overlay image, no badge */
+.bm-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bm-video{background:#0B0B0B}
+/* if the file is missing, collapse the card rather than showing a black box */
+.bm-video-missing{display:none}
+.bm-sound{z-index:5}
+
+/* ==========================================================
+   NEW LOGO — header + footer lockup
+   ========================================================== */
+.nav .brand{display:flex;align-items:center;padding:0;margin-right:auto;line-height:0}
+.nav .brand img{height:30px;width:auto;display:block}
+@media(max-width:900px){.nav .brand img{height:25px}}
+@media(max-width:400px){.nav .brand img{height:22px}}
+
+.foot .brand{margin:0 0 4px;line-height:0}
+.foot .brand img{height:44px;width:auto;display:block}
+@media(max-width:600px){.foot .brand img{height:38px}}
+
+/* ==========================================================
+   FOOTER LINKS — one per line. Final word on this.
+   The 44px tap-target rule had made these inline-flex, which is
+   what made them run together. Nothing below may set them inline.
+   ========================================================== */
+.foot .foot-grid > div > a,
+.foot .foot-grid a:not(.brand):not(.btn){
+  display:block !important;
+  width:100%;
+  float:none;
+  clear:both;
+  min-height:0;
+  padding:10px 0;
+  line-height:1.4;
+  text-decoration:none;
+  color:var(--muted);
+  font-size:14px;
+}
+.foot .foot-grid > div > a:hover{color:var(--orange)}
+.foot .foot-grid h4{margin-bottom:6px}
+.foot .brand img,.nav .brand img{max-width:100%}
