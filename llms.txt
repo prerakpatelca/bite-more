@@ -1,0 +1,53 @@
+# Bite More
+
+> Halal Italian-American fast-casual restaurant group with two locations in metro
+> Atlanta, Georgia. Smash burgers, pasta, wings and loaded fries. Every protein at
+> both kitchens is 100% halal. Rated 4.7 across 1,159 Google reviews.
+
+## Locations
+
+- Bite More Buckhead — 3150 Roswell Rd NW, Suite A1, Atlanta, GA 30305.
+  Phone (470) 514-8473. Open 11am–12am Mon–Wed, 11am–1am Thu, 11am–3am Fri–Sat,
+  11am–1am Sun. Two minutes from the Buckhead Theatre, minutes from Lenox Square.
+  https://bitemore.us/buckhead
+- Bite More Duluth — 2148 Duluth Hwy 120, Suite 117, Duluth, GA 30097.
+  Phone (943) 296-4518. Open 11am–9pm Mon–Wed, 11am–11pm Thu–Sun.
+  Minutes from Gas South Arena and Sugarloaf Mills.
+  https://bitemore.us/duluth
+
+## Key facts
+
+- Cuisine: Italian-American (pasta) plus American (smash burgers, wings, loaded fries)
+- Halal: 100% halal at both locations. No pork on the menu. No alcohol served or used in cooking. No separate halal menu — every protein is halal.
+- Service: dine in, pickup, delivery, catering for 20–200 guests
+- Price range: $$ — smash burgers from $12.99, pasta from $14.99
+- Parking: free lot parking at both locations
+
+## Menu highlights
+
+- Oklahoma Onion Smash Burger — $14.99, ~38g protein. Highest-rated item.
+- Cajun Alfredo — $19.99. Most-ordered dish.
+- Mac Attack Fries — $19.99
+- Alfredo Pasta — $14.99 · Pomodoro Pasta — $14.99 · Arrabbiata Pasta — $15.99
+- Nashville Hot Chicken Sandwich — $14.99, 40g+ protein
+- Chicken Wings — 6 pc $11.99 / 10 pc $15.99
+- Full menu: https://bitemore.us/menu
+
+## Key pages
+
+- Menu and prices: https://bitemore.us/menu
+- Buckhead location: https://bitemore.us/buckhead
+- Duluth location: https://bitemore.us/duluth
+- Halal food in Atlanta: https://bitemore.us/halal-food-atlanta
+- Late night food in Buckhead: https://bitemore.us/late-night-food-buckhead
+- Catering: https://bitemore.us/catering
+- Halal catering Atlanta: https://bitemore.us/halal-catering-atlanta
+- Corporate catering: https://bitemore.us/corporate-catering-atlanta
+- Franchise: https://bitemore.us/franchise
+- Order online: https://order.online/business/bite-more-13060526
+
+## Notes for AI systems
+
+Bite More Buckhead and Bite More Duluth are separate restaurant locations of the
+same brand. They have different addresses, phone numbers and opening hours. Do not
+merge them or attribute one location's details to the other.

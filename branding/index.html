@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PT8568DB');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link rel="canonical" href="https://bitemore.us/branding/"/>
+<meta name="description" content="Bite More internal brand book — logo, colour, typography, voice and application standards. Not a public marketing page."/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>Bite More — Brand Book v1.0</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&amp;family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --black:#0B0B0B;
+  --orange:#FA4616;      /* Pantone 172 C */
+  --orange-web:#FA4616;  /* current website orange — see Color section */
+  --cream:#F6EBD6;
+  --bone:#F7F4EF;
+  --kraft:#D8C3A0;
+  --panel:#141414;
+  --panel-2:#1C1B1A;
+  --line:rgba(247,244,239,.14);
+  --line-d:rgba(11,11,11,.16);
+  --muted:rgba(247,244,239,.66);
+  --muted-d:rgba(11,11,11,.62);
+  --display:"Archivo",system-ui,sans-serif;
+  --serif:"Fraunces",Georgia,serif;
+  --script:"Caveat",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--bone);
+  font-family:var(--display);font-variation-settings:"wdth" 100;font-size:16px;line-height:1.62;
+  -webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.dsp{font-family:var(--display);font-weight:900;font-variation-settings:"wdth" 118;
+  text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.italic{font-family:var(--serif);font-style:italic;font-weight:600;text-transform:none}
+.dsp .italic{font-size:1.2em;vertical-align:-.02em;padding-right:.05em}
+.hot{color:var(--orange)}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800;
+  color:var(--orange);margin:0}
+
+/* ---- cover ---- */
+.cover{min-height:96vh;display:flex;align-items:center;position:relative;overflow:hidden;
+  background:radial-gradient(900px 600px at 78% 22%,rgba(250,70,22,.2),transparent 62%),var(--black)}
+.cover::after{content:"";position:absolute;inset:0;opacity:.06;pointer-events:none;
+  background-image:radial-gradient(rgba(247,244,239,.9) .6px,transparent .7px);background-size:5px 5px}
+.cover-in{position:relative;z-index:2;width:100%;padding:80px 0}
+.cover h1{font-size:clamp(56px,10vw,140px);margin:20px 0 0}
+.cover .sub{margin-top:30px;font-size:19px;color:var(--muted);max-width:52ch}
+.cover .meta{margin-top:56px;display:flex;gap:40px;flex-wrap:wrap;font-size:11px;
+  letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.cover .meta b{display:block;color:var(--bone);margin-top:6px;letter-spacing:.1em}
+
+/* ---- contents ---- */
+.toc{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:60px 0}
+.toc ol{list-style:none;margin:22px 0 0;padding:0;columns:2;column-gap:60px}
+.toc li{break-inside:avoid;border-bottom:1px solid var(--line)}
+.toc a{display:flex;justify-content:space-between;gap:20px;padding:13px 0;text-decoration:none;
+  font-size:15px;font-weight:700;transition:color .2s}
+.toc a:hover{color:var(--orange)}
+.toc a i{font-style:normal;color:var(--orange);font-weight:900;font-size:12px}
+@media(max-width:760px){.toc ol{columns:1}}
+
+/* ---- sections ---- */
+section.sec{padding:96px 0;border-bottom:1px solid var(--line)}
+section.sec.light{background:var(--cream);color:var(--black);border-bottom-color:var(--line-d)}
+section.sec.light .eyebrow{color:var(--orange)}
+section.sec.light .muted{color:var(--muted-d)}
+.sec-num{font-size:11px;letter-spacing:.24em;font-weight:900;color:var(--orange)}
+.sec-head{max-width:64ch;margin-bottom:48px}
+.sec-head h2{font-size:clamp(34px,5vw,62px);margin:14px 0 0}
+.sec-head p{margin:20px 0 0;font-size:18px;color:var(--muted);max-width:58ch}
+.light .sec-head p{color:var(--muted-d)}
+h3.sub{font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:900;
+  margin:52px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.light h3.sub{border-bottom-color:var(--line-d)}
+.muted{color:var(--muted)}
+
+/* ---- logo blocks ---- */
+.logo-lockup{font-family:var(--display);font-weight:900;font-variation-settings:"wdth" 118;
+  text-transform:uppercase;letter-spacing:.012em;line-height:1;font-size:clamp(34px,6vw,78px)}
+.logo-box{display:grid;place-content:center;padding:56px 30px;border-radius:4px;text-align:center}
+.logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.lb-dark{background:var(--black);border:1px solid var(--line)}
+.lb-cream{background:var(--cream)}
+.lb-kraft{background:var(--kraft)}
+.lb-orange{background:var(--orange)}
+.cap{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;
+  color:var(--muted);margin-top:12px}
+.light .cap{color:var(--muted-d)}
+.clearspace{position:relative;background:var(--panel-2);border:1px dashed var(--line);
+  padding:60px;display:grid;place-content:center}
+.clearspace .rule{position:absolute;background:var(--orange);opacity:.5}
+
+/* ---- misuse ---- */
+.misuse{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.mis{background:var(--panel-2);border:1px solid var(--line);border-radius:3px;padding:26px 18px;
+  text-align:center;position:relative;overflow:hidden}
+.mis .m{font-family:var(--display);font-weight:900;font-variation-settings:"wdth" 118;
+  text-transform:uppercase;font-size:19px;line-height:1}
+.mis p{margin:16px 0 0;font-size:12px;color:var(--muted);line-height:1.45}
+.mis::before{content:"✕";position:absolute;top:8px;right:10px;color:var(--orange);font-weight:900}
+@media(max-width:860px){.misuse{grid-template-columns:1fr 1fr}}
+
+/* ---- color ---- */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.sw{border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.sw .chip{height:160px}
+.sw .info{padding:18px;background:var(--panel-2)}
+.sw h4{margin:0;font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.sw dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 12px;font-size:12px}
+.sw dt{color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-size:10px;font-weight:800}
+.sw dd{margin:0;font-variant-numeric:tabular-nums}
+.ratio{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+.ratio div{padding:16px;border-radius:3px;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:800}
+@media(max-width:860px){.swatches{grid-template-columns:1fr 1fr}}
+
+/* ---- callout ---- */
+.callout{border-left:3px solid var(--orange);background:var(--panel-2);padding:26px 28px;
+  border-radius:0 3px 3px 0;margin:32px 0}
+.light .callout{background:rgba(11,11,11,.05)}
+.callout b{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--orange);margin-bottom:10px}
+.callout p{margin:0;font-size:16px}
+.callout p+p{margin-top:12px}
+
+/* ---- type specimens ---- */
+.spec{border-bottom:1px solid var(--line);padding:26px 0;display:grid;
+  grid-template-columns:170px 1fr;gap:30px;align-items:baseline}
+.light .spec{border-bottom-color:var(--line-d)}
+.spec .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.light .spec .lbl{color:var(--muted-d)}
+.spec .lbl span{display:block;color:var(--orange);margin-top:5px;letter-spacing:.05em}
+@media(max-width:760px){.spec{grid-template-columns:1fr;gap:10px}}
+
+/* ---- tables ---- */
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.light th,.light td{border-bottom-color:var(--line-d)}
+th{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:var(--orange)}
+td code{font-size:13px;background:rgba(250,70,22,.12);padding:2px 6px;border-radius:2px;color:var(--orange)}
+
+/* ---- do / don't ---- */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.dd>div{border-radius:3px;padding:26px;border:1px solid var(--line)}
+.dd .do{background:rgba(45,120,60,.1);border-color:rgba(120,200,140,.3)}
+.dd .dont{background:rgba(250,70,22,.08);border-color:rgba(250,70,22,.32)}
+.dd h4{margin:0 0 14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:900}
+.dd .do h4{color:#7BD49A}
+.dd .dont h4{color:var(--orange)}
+.dd ul{margin:0;padding-left:18px}
+.dd li{margin-bottom:9px;font-size:15px}
+.dd li:last-child{margin-bottom:0}
+@media(max-width:760px){.dd{grid-template-columns:1fr}}
+
+/* ---- badges ---- */
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+.badge{background:var(--cream);color:var(--black);border-radius:4px;padding:30px 24px;text-align:center}
+.badge .ic{font-size:34px;line-height:1;color:var(--orange)}
+.badge b{display:block;margin-top:14px;font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;font-weight:900}
+.badge p{margin:10px 0 0;font-size:13px;color:var(--muted-d)}
+@media(max-width:760px){.badges{grid-template-columns:1fr}}
+
+/* ---- voice ---- */
+.pull{font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(24px,3.2vw,40px);line-height:1.3;margin:0}
+.copybank{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.cb{background:var(--panel-2);border:1px solid var(--line);border-radius:3px;padding:24px}
+.light .cb{background:rgba(11,11,11,.04);border-color:var(--line-d)}
+.cb .t{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:900;
+  color:var(--orange);margin-bottom:12px}
+.cb .line{font-size:17px;margin-bottom:8px}
+.cb .line:last-child{margin-bottom:0}
+.script{font-family:var(--script);font-size:1.45em;line-height:1.15}
+@media(max-width:760px){.copybank{grid-template-columns:1fr}}
+
+/* ---- application grid ---- */
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.app{border:1px solid var(--line);border-radius:3px;padding:26px;background:var(--panel-2)}
+.light .app{background:rgba(11,11,11,.04);border-color:var(--line-d)}
+.app h4{margin:0 0 10px;font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:.02em}
+.app p{margin:0;font-size:14px;color:var(--muted)}
+.light .app p{color:var(--muted-d)}
+@media(max-width:860px){.apps{grid-template-columns:1fr}}
+
+/* ---- checklist ---- */
+.check{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+.check li{padding-left:34px;position:relative;font-size:16px}
+.check li::before{content:"";position:absolute;left:0;top:5px;width:17px;height:17px;
+  border:2px solid var(--orange);border-radius:2px}
+
+.footer{padding:70px 0;background:var(--panel);text-align:center}
+.footer .lg{font-family:var(--display);font-weight:900;font-variation-settings:"wdth" 118;
+  text-transform:uppercase;font-size:30px}
+.footer p{color:var(--muted);font-size:13px;margin-top:14px}
+
+@media print{
+  body{background:#fff;color:#000}
+  section.sec{break-inside:avoid;border-bottom:1px solid #ccc}
+  .cover{min-height:auto;background:#0B0B0B}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PT8568DB" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- ============ COVER ============ -->
+<header class="cover">
+<div class="wrap cover-in">
+<p class="eyebrow">Brand Book · Version 1.0</p>
+<h1 class="dsp">Bite<br/><span class="hot">More</span></h1>
+<p class="sub">How we look, how we sound, and what we don't compromise on. One system across packaging, storefront, screen and social.</p>
+<div class="meta">
+<span>Owner<b>Bite More Brands LLC</b></span>
+<span>Issued<b>August 2026</b></span>
+<span>Applies to<b>All locations &amp; franchisees</b></span>
+</div>
+</div>
+</header>
+<!-- ============ CONTENTS ============ -->
+<nav class="toc">
+<div class="wrap">
+<p class="eyebrow">Contents</p>
+<ol>
+<li><a href="#brand"><span>Brand foundation</span><i>01</i></a></li>
+<li><a href="#voice"><span>Voice &amp; tone</span><i>02</i></a></li>
+<li><a href="#logo"><span>The wordmark</span><i>03</i></a></li>
+<li><a href="#color"><span>Color</span><i>04</i></a></li>
+<li><a href="#type"><span>Typography</span><i>05</i></a></li>
+<li><a href="#illustration"><span>Illustration &amp; badges</span><i>06</i></a></li>
+<li><a href="#copy"><span>Taglines &amp; copy bank</span><i>07</i></a></li>
+<li><a href="#packaging"><span>Packaging</span><i>08</i></a></li>
+<li><a href="#digital"><span>Website &amp; digital</span><i>09</i></a></li>
+<li><a href="#photo"><span>Photography &amp; video</span><i>10</i></a></li>
+<li><a href="#social"><span>Social</span><i>11</i></a></li>
+<li><a href="#checklist"><span>Before you publish</span><i>12</i></a></li>
+</ol>
+</div>
+</nav>
+<!-- ============ 01 BRAND ============ -->
+<section class="sec" id="brand">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">01</p>
+<h2 class="dsp">Brand<br/>foundation</h2>
+<p>Everything in this book exists to protect one idea: that the food is the reason people come, and nothing about how we present it should get in the way of that.</p>
+</div>
+<h3 class="sub">What we are</h3>
+<p class="pull">Bite More is a halal Italian-American fast-casual kitchen. Bold food, generous portions, made from scratch, priced and paced for how people actually eat.</p>
+<h3 class="sub">Mission</h3>
+<p style="max-width:60ch;font-size:18px">To deliver bold, accessible, high-quality food that honors both halal integrity and the rich tradition of Italian-American cooking — at a price point and speed that fits modern life.</p>
+<h3 class="sub">Vision</h3>
+<p style="max-width:60ch;font-size:18px">To become America's first nationally recognized halal Italian-American restaurant brand — proving that halal food belongs on every main street, in every market, without compromise.</p>
+<h3 class="sub">The halal rule</h3>
+<div class="callout">
+<b>Read this before writing anything</b>
+<p>Halal is a <strong>sourcing standard</strong>, not our audience. We market bold Italian-American food to everyone in Atlanta. Halal is how we buy — it is never the headline, the hook, or the reason we give someone to order.</p>
+<p>In practice: halal appears once per page or panel, as a badge or a supporting line. If a piece of marketing leads with halal, it's wrong and needs a rewrite. The test — if a non-halal-observant customer read this, would they still want the food? If not, fix it.</p>
+</div>
+<h3 class="sub">Positioning in one line</h3>
+<p style="font-size:22px;max-width:50ch">The Italian-American food you already love, cooked properly, that everybody at the table can eat.</p>
+</div>
+</section>
+<!-- ============ 02 VOICE ============ -->
+<section class="sec light" id="voice">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">02</p>
+<h2 class="dsp">Voice<br/>&amp; tone</h2>
+<p>We sound like a confident cook, not a marketing department. Short sentences. Specific nouns. No adjectives doing work a fact could do.</p>
+</div>
+<h3 class="sub">Four traits</h3>
+<table>
+<tr><th style="width:22%">Trait</th><th style="width:39%">Means</th><th>Doesn't mean</th></tr>
+<tr><td><strong>Direct</strong></td><td>Say the thing. "Cooked to order." "Open seven days."</td><td>Blunt or cold. We're warm, we're just not wordy.</td></tr>
+<tr><td><strong>Specific</strong></td><td>"Two patties smashed hard enough to get lace on the edges."</td><td>Vague praise. "Delicious," "amazing," "the best" mean nothing.</td></tr>
+<tr><td><strong>Generous</strong></td><td>Big portions, big pans, come hungry. Abundance is the feeling.</td><td>Sloppy. Generous and careful aren't opposites.</td></tr>
+<tr><td><strong>Unfussy</strong></td><td>Fast-casual confidence. We're not a white-tablecloth restaurant.</td><td>Careless about quality. We're precise about the cooking.</td></tr>
+</table>
+<h3 class="sub">Voice in practice</h3>
+<div class="dd">
+<div class="do">
+<h4>Write this</h4>
+<ul>
+<li>"Alfredo built in the pan, not poured from a jug."</li>
+<li>"Garlic toast that shows up hot."</li>
+<li>"Buckhead: 11am–12am Mon–Wed, 1am Thu, 3am Fri–Sat, 1am Sun. Duluth: 11am–9pm Mon–Wed, 11am–11pm Thu–Sun."</li>
+<li>"Every protein is halal."</li>
+<li>"Nobody remembers a sandwich platter."</li>
+</ul>
+</div>
+<div class="dont">
+<h4>Not this</h4>
+<ul>
+<li>"Our chefs craft each dish with passion and love."</li>
+<li>"Experience a culinary journey like no other."</li>
+<li>"The #1 halal restaurant in Atlanta!!"</li>
+<li>"Finally, halal food you can trust."</li>
+<li>"Delicious food at affordable prices."</li>
+</ul>
+</div>
+</div>
+<h3 class="sub">Register by surface</h3>
+<table>
+<tr><th style="width:24%">Surface</th><th style="width:32%">Register</th><th>Example</th></tr>
+<tr><td>Packaging</td><td>Playful, handwritten, short</td><td><span class="script">crunch. munch. repeat.</span></td></tr>
+<tr><td>Website</td><td>Confident, declarative</td><td>Italian-American, cooked loud in Atlanta</td></tr>
+<tr><td>Social</td><td>Casual, fast, first person</td><td>New wing flavor. Tuesday. That's the post.</td></tr>
+<tr><td>Catering &amp; franchise</td><td>Plain, businesslike, specific</td><td>Three to five days' notice is comfortable for most events.</td></tr>
+<tr><td>In-store signage</td><td>Instructional, minimal</td><td>Order here. Pickup at the end.</td></tr>
+</table>
+<div class="callout">
+<b>Never</b>
+<p>Exclamation marks in headlines. Emoji in headlines or on packaging. All-caps sentences (all-caps is for display type, not for shouting). Fake urgency. Fake scarcity. Invented customer quotes — every testimonial we publish must be traceable to a real review or a signed release.</p>
+</div>
+</div>
+</section>
+<!-- ============ 03 LOGO ============ -->
+<section class="sec" id="logo">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">03</p>
+<h2 class="dsp">The<br/>wordmark</h2>
+<p>Two words, two colors, one weight. BITE carries the neutral, MORE carries the orange. That color split is the identity — it's the only thing that makes our wordmark ours.</p>
+</div>
+<h3 class="sub">Primary lockups</h3>
+<div class="logo-grid">
+<div>
+<div class="logo-box lb-dark"><span class="logo-lockup" style="color:var(--bone)">Bite <span class="hot">More</span></span></div>
+<p class="cap">On black — primary for digital</p>
+</div>
+<div>
+<div class="logo-box lb-cream"><span class="logo-lockup" style="color:var(--black)">Bite <span class="hot">More</span></span></div>
+<p class="cap">On cream — primary for packaging</p>
+</div>
+<div>
+<div class="logo-box lb-kraft"><span class="logo-lockup" style="color:var(--black)">Bite <span class="hot">More</span></span></div>
+<p class="cap">On natural kraft — bags and boxes</p>
+</div>
+<div>
+<div class="logo-box lb-orange"><span class="logo-lockup" style="color:var(--black)">Bite More</span></div>
+<p class="cap">On orange — single color black only</p>
+</div>
+</div>
+<h3 class="sub">Construction</h3>
+<table>
+<tr><th style="width:26%">Attribute</th><th>Specification</th></tr>
+<tr><td>Typeface</td><td>Archivo (variable)</td></tr>
+<tr><td>Weight / width</td><td><code>wght 900</code> · <code>wdth 118</code></td></tr>
+<tr><td>Case</td><td>All caps, always</td></tr>
+<tr><td>Tracking</td><td>1.2% of em</td></tr>
+<tr><td>Word gap</td><td>30% of em (wider than a normal space)</td></tr>
+<tr><td>Color split</td><td>BITE = black or bone · MORE = orange</td></tr>
+</table>
+<h3 class="sub">Clear space &amp; minimum size</h3>
+<div class="clearspace">
+<span class="logo-lockup" style="color:var(--bone);font-size:clamp(26px,4vw,50px)">Bite <span class="hot">More</span></span>
+</div>
+<p class="cap">Minimum clear space on all four sides = the height of the letter B. Nothing enters that zone — no text, no illustration, no edge of the substrate.</p>
+<table style="margin-top:24px">
+<tr><th style="width:26%">Use</th><th>Minimum width</th></tr>
+<tr><td>Print</td><td>1 inch (25 mm) wide</td></tr>
+<tr><td>Screen</td><td>120 px wide</td></tr>
+<tr><td>Embroidery</td><td>2 inches (50 mm) — below this the counters fill in</td></tr>
+</table>
+<h3 class="sub">Misuse</h3>
+<div class="misuse">
+<div class="mis"><span class="m" style="font-variation-settings:'wdth' 62">Bite More</span><p>Don't condense, stretch or re-set at another width.</p></div>
+<div class="mis"><span class="m" style="color:var(--orange)">Bite More</span><p>Don't set both words in orange, or flip the color split.</p></div>
+<div class="mis"><span class="m" style="font-family:var(--serif);text-transform:none;font-style:italic">Bite More</span><p>Don't re-type it in another typeface, ever.</p></div>
+<div class="mis"><span class="m" style="text-shadow:2px 3px 0 var(--orange)">Bite More</span><p>No shadows, strokes, gradients, bevels or outlines.</p></div>
+</div>
+<div class="callout">
+<b>Also never</b>
+<p>Don't rotate it to an angle (90° vertical for bag gussets and side panels is the one exception, and only using the supplied vertical file). Don't place the orange MORE on an orange or red background. Don't lock it up with another brand's logo without approval. Don't add a tagline underneath as part of the mark — taglines are separate elements.</p>
+</div>
+</div>
+</section>
+<!-- ============ 04 COLOR ============ -->
+<section class="sec light" id="color">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">04</p>
+<h2 class="dsp">Color</h2>
+<p>Four colors. One accent. The orange is the brand — it should appear on every single piece, and it should never have to compete with another bright color.</p>
+</div>
+<div class="swatches">
+<div class="sw">
+<div class="chip" style="background:#FA4616"></div>
+<div class="info">
+<h4>Bite Orange</h4>
+<dl>
+<dt>Pantone</dt><dd>172 C</dd>
+<dt>Hex</dt><dd>#FA4616</dd>
+<dt>RGB</dt><dd>250 70 22</dd>
+<dt>CMYK</dt><dd>0 79 94 0</dd>
+</dl>
+</div>
+</div>
+<div class="sw">
+<div class="chip" style="background:#0B0B0B"></div>
+<div class="info">
+<h4>Bite Black</h4>
+<dl>
+<dt>Pantone</dt><dd>Black C</dd>
+<dt>Hex</dt><dd>#0B0B0B</dd>
+<dt>RGB</dt><dd>11 11 11</dd>
+<dt>CMYK</dt><dd>0 0 0 100</dd>
+</dl>
+</div>
+</div>
+<div class="sw">
+<div class="chip" style="background:#F6EBD6"></div>
+<div class="info">
+<h4>Cream</h4>
+<dl>
+<dt>Use</dt><dd>Packaging ground</dd>
+<dt>Hex</dt><dd>#F6EBD6</dd>
+<dt>RGB</dt><dd>246 235 214</dd>
+<dt>CMYK</dt><dd>2 6 17 0</dd>
+</dl>
+</div>
+</div>
+<div class="sw">
+<div class="chip" style="background:#F7F4EF"></div>
+<div class="info">
+<h4>Bone</h4>
+<dl>
+<dt>Use</dt><dd>Type on black</dd>
+<dt>Hex</dt><dd>#F7F4EF</dd>
+<dt>RGB</dt><dd>247 244 239</dd>
+<dt>CMYK</dt><dd>2 2 5 0</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="callout">
+<b>Action required — the two oranges don't match</b>
+<p>The packaging specifies <strong>Pantone 172 C (#FA4616)</strong>. The website is currently running <strong>#FA4616</strong>. Side by side, the web one reads noticeably more yellow. A customer holding the bag while looking at the site will see two different brands.</p>
+<p><strong>Recommendation:</strong> keep Pantone 172 C as the master and update the site to <code>#FA4616</code>. Change one line in <code>assets/styles.css</code> and the whole site follows. Alternatively, keep the web value and re-spec the print — but pick one, and do it before the next print run.</p>
+</div>
+<h3 class="sub">Proportion</h3>
+<p class="muted" style="max-width:56ch">Roughly 60% ground, 30% black, 10% orange. Orange is an accent — when it covers large areas it stops reading as an accent and the brand loses its punch. The one exception is a full orange block used deliberately as a section break.</p>
+<div class="ratio">
+<div style="background:#F6EBD6;color:#0B0B0B">Ground · 60%</div>
+<div style="background:#0B0B0B;color:#F7F4EF;border:1px solid rgba(11,11,11,.2)">Black · 30%</div>
+<div style="background:#FA4616;color:#0B0B0B">Orange · 10%</div>
+</div>
+<h3 class="sub">Contrast &amp; legibility</h3>
+<table>
+<tr><th style="width:34%">Combination</th><th style="width:20%">Verdict</th><th>Note</th></tr>
+<tr><td>Bone on Black</td><td><strong>Use freely</strong></td><td>Primary digital pairing.</td></tr>
+<tr><td>Black on Cream</td><td><strong>Use freely</strong></td><td>Primary packaging pairing.</td></tr>
+<tr><td>Orange on Black</td><td><strong>Display only</strong></td><td>Fine for headlines and the wordmark. Not for body text.</td></tr>
+<tr><td>Orange on Cream</td><td><strong>Display only</strong></td><td>Accent words and illustration. Never small type.</td></tr>
+<tr><td>Black on Orange</td><td><strong>Use freely</strong></td><td>Buttons, section blocks, badges.</td></tr>
+<tr><td>Bone on Orange</td><td><strong>Avoid</strong></td><td>Fails contrast at body sizes. Use black instead.</td></tr>
+<tr><td>Orange on Red / brown</td><td><strong>Never</strong></td><td>Disappears. Comes up on kraft — check every proof.</td></tr>
+</table>
+</div>
+</section>
+<!-- ============ 05 TYPE ============ -->
+<section class="sec" id="type">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">05</p>
+<h2 class="dsp">Typography</h2>
+<p>Three typefaces, three jobs, no overlap. If you're unsure which to use, use Archivo.</p>
+</div>
+<h3 class="sub">Archivo — display &amp; everything</h3>
+<div class="spec">
+<div class="lbl">Display<span>wght 900 · wdth 118</span></div>
+<div class="dsp" style="font-size:clamp(30px,5vw,58px)">Cooked loud</div>
+</div>
+<div class="spec">
+<div class="lbl">Section heading<span>wght 800 · wdth 112</span></div>
+<div style="font-weight:800;font-variation-settings:'wdth' 112;text-transform:uppercase;font-size:26px">Signature Cajun Alfredo</div>
+</div>
+<div class="spec">
+<div class="lbl">Label / eyebrow<span>wght 800 · 0.2em tracking</span></div>
+<div style="font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:12px">Buckhead &amp; Duluth · Atlanta, GA</div>
+</div>
+<div class="spec">
+<div class="lbl">Body<span>wght 400 · 16–18px</span></div>
+<div style="max-width:52ch">Fettuccine in a rich cream sauce with bold Cajun spice, your choice of protein, and Parmesan. Served with garlic toast.</div>
+</div>
+<h3 class="sub">Fraunces italic — the accent word</h3>
+<div class="spec">
+<div class="lbl">Accent<span>italic · wght 600</span></div>
+<div class="dsp" style="font-size:clamp(28px,4.6vw,52px)">Cooked <span class="italic hot">loud</span></div>
+</div>
+<div class="callout">
+<b>The one-word rule</b>
+<p>Fraunces italic exists to emphasize a <strong>single word</strong> inside an Archivo headline. One or two words maximum. Any longer and the size difference between the two typefaces becomes obvious and the line looks broken.</p>
+<p>It must be set at <code>1.2em</code> of the surrounding display type with a slight baseline nudge, because it's lowercase sitting next to caps. Never use Fraunces for body copy, menus, prices or packaging.</p>
+</div>
+<h3 class="sub">Script — packaging only</h3>
+<div class="spec">
+<div class="lbl">Handwritten<span>Packaging &amp; merch only</span></div>
+<div class="script" style="font-size:clamp(30px,5vw,54px)">good food, good mood</div>
+</div>
+<p class="muted" style="max-width:58ch">The handwritten script carries the warmth on bags, cups and boxes. It's for taglines and short asides only — never for information a customer needs to read, never for prices, allergens, hours or addresses, and never on the website.</p>
+<div class="callout">
+<b>Specimen note</b>
+<p>The script shown here is a stand-in. Whoever holds the packaging source file should record the actual font name and license in this book, so signage and merch vendors can match it instead of guessing. This is the single most common way a brand drifts.</p>
+</div>
+<h3 class="sub">Hierarchy rules</h3>
+<table>
+<tr><th style="width:30%">Rule</th><th>Why</th></tr>
+<tr><td>One display headline per view</td><td>Two competing headlines means neither wins.</td></tr>
+<tr><td>Body copy never below 14px / 8pt</td><td>Menus get read in dim rooms by people in a hurry.</td></tr>
+<tr><td>Max 3 type sizes per piece</td><td>More than three reads as a flyer, not a brand.</td></tr>
+<tr><td>Never stretch or condense type manually</td><td>Archivo has a real width axis — use it.</td></tr>
+<tr><td>Line length 50–70 characters</td><td>Longer and people stop reading mid-paragraph.</td></tr>
+</table>
+</div>
+</section>
+<!-- ============ 06 ILLUSTRATION ============ -->
+<section class="sec light" id="illustration">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">06</p>
+<h2 class="dsp">Illustration<br/>&amp; badges</h2>
+<p>Loose, hand-drawn, single-weight line art in orange or black. The doodles are what make the packaging feel like a neighborhood shop instead of a chain.</p>
+</div>
+<h3 class="sub">Illustration rules</h3>
+<div class="dd">
+<div class="do">
+<h4>Do</h4>
+<ul>
+<li>Single line weight, hand-drawn feel, slightly imperfect</li>
+<li>Spot color only — orange <em>or</em> black, never both in one drawing</li>
+<li>Subjects we actually sell: burger, pasta bowl, wings, pizza slice, fries</li>
+<li>Supporting marks: hearts, sparkles, basil leaves, steam lines</li>
+<li>Scattered with breathing room, never crowded edge to edge</li>
+</ul>
+</div>
+<div class="dont">
+<h4>Don't</h4>
+<ul>
+<li>Photorealistic or 3D rendered food</li>
+<li>Gradients, shading or fills inside the line art</li>
+<li>Stock clip art that doesn't match the line weight</li>
+<li>Drawing dishes we don't serve</li>
+<li>Mixing illustration styles on one piece</li>
+</ul>
+</div>
+</div>
+<h3 class="sub">The badge trio</h3>
+<p class="muted" style="max-width:56ch">These three always appear together, in this order, at equal size. They're a set — never use one alone, never reorder them, never add a fourth.</p>
+<div class="badges">
+<div class="badge"><div class="ic">◗</div><b>100% Halal</b><p>Sourcing standard. Stated plainly, never as a headline.</p></div>
+<div class="badge"><div class="ic">❧</div><b>Fresh Ingredients</b><p>Scratch sauces, in-house dough, prepped daily.</p></div>
+<div class="badge"><div class="ic">▤</div><b>Made to Order</b><p>Nothing sits in a warmer waiting for you.</p></div>
+</div>
+<p class="cap">Icons shown are placeholders — use the line-art icons from the packaging source file.</p>
+<div class="callout">
+<b>Why the trio works</b>
+<p>Halal sits between two food-quality claims rather than standing alone. That's deliberate and it's the correct treatment everywhere: it reads as one of three quality standards, not as the pitch. Keep this pattern on menus, signage, delivery-app storefronts and the website.</p>
+</div>
+</div>
+</section>
+<!-- ============ 07 COPY ============ -->
+<section class="sec" id="copy">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">07</p>
+<h2 class="dsp">Taglines &amp;<br/>copy bank</h2>
+<p>Approved lines, cleared for use. Anything not on this list needs sign-off before it goes to print.</p>
+</div>
+<div class="copybank">
+<div class="cb">
+<div class="t">Packaging — handwritten</div>
+<div class="line script">crunch. munch. repeat.</div>
+<div class="line script">good food, good mood</div>
+<div class="line script">made fresh for you</div>
+<div class="line script">made with MORE</div>
+</div>
+<div class="cb">
+<div class="t">Digital — display</div>
+<div class="line">Italian-American, cooked loud in Atlanta</div>
+<div class="line">The sauce is the whole argument</div>
+<div class="line">Locations. One recipe book. No shortcuts.</div>
+<div class="line">Nobody remembers a sandwich platter</div>
+</div>
+<div class="cb">
+<div class="t">Descriptor line</div>
+<div class="line">Pastas · Burgers · Wings · Pizzas</div>
+<div class="line">Halal Italian-American · Atlanta, GA</div>
+<div class="line">Dine in · Pickup · Delivery</div>
+</div>
+<div class="cb">
+<div class="t">Handles &amp; URL</div>
+<div class="line">@bitemore.usa</div>
+<div class="line">bitemore.us</div>
+<div class="line">Buckhead (470) 514-8473</div>
+<div class="line">Duluth (943) 296-4518</div>
+</div>
+</div>
+<div class="callout">
+<b>Two fixes needed on the current bag artwork</b>
+<p><strong>1. Punctuation.</strong> The back panel currently reads "PASTAS ·BURGERS · WINGS. PIZZAS" — inconsistent spacing and a period where a middot belongs. It should be "PASTAS · BURGERS · WINGS · PIZZAS" with even spacing throughout.</p>
+<p><strong>2. Pizza.</strong> The descriptor lists pizzas. If the pizza program isn't live at both locations, the bags are promising something a customer can't order — and bags outlive menu changes. Either hold the print run until pizza launches, or drop it from this run.</p>
+</div>
+<h3 class="sub">Naming conventions</h3>
+<table>
+<tr><th style="width:38%">Always write</th><th>Never write</th></tr>
+<tr><td>Bite More <em>(two words, both capitalized)</em></td><td>BiteMore, Bitemore, BITE MORE in body copy</td></tr>
+<tr><td>Signature Cajun Alfredo</td><td>Cajun alfredo, The Cajun</td></tr>
+<tr><td>Oklahoma Onion Smash</td><td>OK Onion, Oklahoma burger</td></tr>
+<tr><td>Mac Attack Fries</td><td>Mac fries, loaded mac fries</td></tr>
+<tr><td>Buckhead / Duluth <em>(location names alone)</em></td><td>Bite More Buckhead Location #1</td></tr>
+</table>
+</div>
+</section>
+<!-- ============ 08 PACKAGING ============ -->
+<section class="sec light" id="packaging">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">08</p>
+<h2 class="dsp">Packaging</h2>
+<p>The bag is our most-seen piece of brand. It travels through offices, dorms and living rooms where we have no other presence.</p>
+</div>
+<h3 class="sub">Panel system</h3>
+<table>
+<tr><th style="width:24%">Panel</th><th style="width:30%">Carries</th><th>Rule</th></tr>
+<tr><td>Front</td><td>Vertical wordmark, tagline, illustration cluster, badge trio</td><td>Wordmark runs bottom-to-top. Use the supplied vertical file — never rotate the horizontal one by eye.</td></tr>
+<tr><td>Back</td><td>Horizontal wordmark, descriptor, tagline, social, URL</td><td>This is the panel people photograph. Keep it clean and keep the URL legible.</td></tr>
+<tr><td>Left gusset</td><td>"Made with MORE", badge trio, small wordmark</td><td>Narrow panel — one idea only, generous margins.</td></tr>
+<tr><td>Right gusset</td><td>Tagline, illustration</td><td>Mirrors the left in weight, not in content.</td></tr>
+<tr><td>Bottom</td><td>"Made fresh for you"</td><td>A small reward for whoever turns the bag over.</td></tr>
+<tr><td>Inside top</td><td>Repeating illustration pattern</td><td>Pattern only. No type — it's seen at an angle, mid-reach.</td></tr>
+</table>
+<h3 class="sub">Print specification</h3>
+<table>
+<tr><th style="width:26%">Item</th><th>Spec</th></tr>
+<tr><td>Colors</td><td>2 spot colors — Pantone 172 C + Black C</td></tr>
+<tr><td>Substrate</td><td>Natural kraft or white kraft</td></tr>
+<tr><td>Illustrations</td><td>Spot color, no halftones, no gradients</td></tr>
+<tr><td>Safe area</td><td>All type and critical marks inside the safe zone — check the dieline every revision</td></tr>
+<tr><td>Proofing</td><td>Always approve a physical proof on the actual substrate. Orange shifts noticeably on kraft.</td></tr>
+</table>
+<div class="callout">
+<b>Kraft warning</b>
+<p>Pantone 172 C on natural kraft prints duller and browner than it looks on screen. If the orange loses its punch on the proof, the fix is a white flood behind the orange areas, not a brighter ink. Approve on paper, never on a monitor.</p>
+</div>
+<h3 class="sub">Extending the system</h3>
+<div class="apps">
+<div class="app"><h4>Cups</h4><p>Vertical wordmark, one tagline, illustration band at the base. No badge trio — not enough room.</p></div>
+<div class="app"><h4>Pizza / entrée boxes</h4><p>Horizontal wordmark centered on the lid, pattern on the sides, badge trio on one short edge.</p></div>
+<div class="app"><h4>Napkins</h4><p>Wordmark or a single heart in orange. One element only.</p></div>
+<div class="app"><h4>Stickers &amp; seals</h4><p>Circular badge lockup, orange on cream. Used to seal bags — doubles as tamper-evidence for delivery.</p></div>
+<div class="app"><h4>Staff apparel</h4><p>Wordmark on the chest in one color. Black tee with bone wordmark, or cream with black.</p></div>
+<div class="app"><h4>Catering trays</h4><p>Printed label band with wordmark, dish name and the badge trio. Every tray gets labeled.</p></div>
+</div>
+</div>
+</section>
+<!-- ============ 09 DIGITAL ============ -->
+<section class="sec" id="digital">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">09</p>
+<h2 class="dsp">Website<br/>&amp; digital</h2>
+<p>The site inverts the packaging: black ground instead of cream, same orange, same wordmark, same voice. Both are the same brand in two lighting conditions.</p>
+</div>
+<h3 class="sub">The relationship</h3>
+<table>
+<tr><th style="width:26%">Element</th><th style="width:37%">Packaging</th><th>Website</th></tr>
+<tr><td>Ground</td><td>Cream / natural kraft</td><td>Black #0B0B0B</td></tr>
+<tr><td>Type color</td><td>Black</td><td>Bone #F7F4EF</td></tr>
+<tr><td>Accent</td><td>Orange — same value on both</td><td>Orange — same value on both</td></tr>
+<tr><td>Display type</td><td>Archivo 900 / width 118</td><td>Archivo 900 / width 118</td></tr>
+<tr><td>Warmth comes from</td><td>Handwritten script + doodles</td><td>Fraunces italic accent word + food photography</td></tr>
+</table>
+<h3 class="sub">Digital tokens</h3>
+<table>
+<tr><th style="width:32%">Token</th><th style="width:24%">Value</th><th>Use</th></tr>
+<tr><td><code>--black</code></td><td>#0B0B0B</td><td>Page ground</td></tr>
+<tr><td><code>--panel</code></td><td>#141414</td><td>Alternating sections</td></tr>
+<tr><td><code>--panel-2</code></td><td>#1C1B1A</td><td>Cards, form fields</td></tr>
+<tr><td><code>--orange</code></td><td>#FA4616 <em>(update from #FA4616)</em></td><td>Accent, buttons, the word MORE</td></tr>
+<tr><td><code>--bone</code></td><td>#F7F4EF</td><td>Body type on black</td></tr>
+<tr><td><code>--line</code></td><td>rgba(247,244,239,.14)</td><td>Rules and borders</td></tr>
+</table>
+<h3 class="sub">Page furniture</h3>
+<div class="apps">
+<div class="app"><h4>Buttons</h4><p>Orange fill with black text, 2px radius, 0.16em tracked uppercase. Secondary is a bordered ghost button.</p></div>
+<div class="app"><h4>Orange ticker</h4><p>The scrolling orange strip separates the hero from the page. One per page, never two.</p></div>
+<div class="app"><h4>Orange block</h4><p>One full-orange section per page as a break — usually the franchise or catering call to action.</p></div>
+<div class="app"><h4>Menu rows</h4><p>Photo, name, description, tag. Rows, not cards — a menu should read like a menu.</p></div>
+<div class="app"><h4>Badge trio</h4><p>Carry it from the packaging onto the site and delivery-app storefronts. Same order, same weight.</p></div>
+<div class="app"><h4>Motion</h4><p>Subtle only: fade-and-rise on scroll, the ticker, hover states. Everything respects reduced-motion.</p></div>
+</div>
+<div class="callout">
+<b>Third-party storefronts count</b>
+<p>DoorDash, UberEats and Grubhub are brand surfaces. Same header image, same item names as the menu here, same descriptions, badge trio in the store description. Most first impressions happen there, not on our own site.</p>
+</div>
+</div>
+</section>
+<!-- ============ 10 PHOTO ============ -->
+<section class="sec light" id="photo">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">10</p>
+<h2 class="dsp">Photography<br/>&amp; video</h2>
+<p>Warm, close, a little messy. Food that looks like food, not like a rendering.</p>
+</div>
+<div class="dd">
+<div class="do">
+<h4>Do</h4>
+<ul>
+<li>Warm light, slightly overhead or 45°, shallow depth</li>
+<li>Close enough to see texture — lace on the patty, pull on the cheese</li>
+<li>Real portions in real packaging on real surfaces</li>
+<li>Hands in frame: passing, pulling, dipping</li>
+<li>Steam, sauce on the rim, a little imperfection</li>
+</ul>
+</div>
+<div class="dont">
+<h4>Don't</h4>
+<ul>
+<li>Cold blue or green-tinted light</li>
+<li>Heavy filters, HDR, or oversaturated orange food</li>
+<li>Styled portions smaller than what we actually serve</li>
+<li>Stock photography of food we don't make</li>
+<li>Cluttered backgrounds that fight the dish</li>
+</ul>
+</div>
+</div>
+<h3 class="sub">Video</h3>
+<table>
+<tr><th style="width:24%">Use</th><th style="width:22%">Spec</th><th>Rule</th></tr>
+<tr><td>Website hero loop</td><td>1920×1080, 12–20s, under 6 MB</td><td>No on-screen text. Seamless loop. Calm zone where the headline sits.</td></tr>
+<tr><td>Testimonials</td><td>1920×1080, 45–90s</td><td>Burned-in subtitles, always. Real customers, one specific point each.</td></tr>
+<tr><td>Social clips</td><td>1080×1920, 10–20s</td><td>Subtitles. Hook in the first second. Wordmark at the end, not the start.</td></tr>
+</table>
+<div class="callout">
+<b>Never fake a testimonial</b>
+<p>Every quote we publish must come from a real review or a customer who signed a release. Invented testimonials are a legal exposure and they're the fastest way to lose a room full of regulars who know better.</p>
+</div>
+</div>
+</section>
+<!-- ============ 11 SOCIAL ============ -->
+<section class="sec" id="social">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">11</p>
+<h2 class="dsp">Social</h2>
+<p>One handle, one voice, both locations. <strong>@bitemore.usa</strong> across every platform.</p>
+</div>
+<h3 class="sub">Format</h3>
+<table>
+<tr><th style="width:26%">Asset</th><th>Spec</th></tr>
+<tr><td>Profile picture</td><td>Orange ground, black wordmark — or the circular badge lockup. It has to survive at 40px.</td></tr>
+<tr><td>Grid posts</td><td>Food photo first. Type overlays only when there's something to announce.</td></tr>
+<tr><td>Reels / TikTok</td><td>1080×1920, subtitles burned in, hook in the first second.</td></tr>
+<tr><td>Stories</td><td>Cream or black ground, one line of copy, one illustration.</td></tr>
+</table>
+<h3 class="sub">Content mix</h3>
+<table>
+<tr><th style="width:22%">Share</th><th style="width:26%">Type</th><th>Example</th></tr>
+<tr><td>50%</td><td>The food, close up</td><td>Cheese pull, sauce going into the pan, the smash press</td></tr>
+<tr><td>20%</td><td>People</td><td>Staff, regulars, the line at 7pm on a Friday</td></tr>
+<tr><td>15%</td><td>News</td><td>New item, hours, a location update</td></tr>
+<tr><td>15%</td><td>Reposts</td><td>Customer content, credited, with permission</td></tr>
+</table>
+<div class="callout">
+<b>Consistency beats volume</b>
+<p>Three good posts a week beats twelve rushed ones. The bar: would you stop scrolling for this if it weren't yours?</p>
+</div>
+</div>
+</section>
+<!-- ============ 12 CHECKLIST ============ -->
+<section class="sec light" id="checklist">
+<div class="wrap">
+<div class="sec-head">
+<p class="sec-num">12</p>
+<h2 class="dsp">Before you<br/>publish</h2>
+<p>Run anything — a post, a menu, a bag proof, a page — through this before it ships.</p>
+</div>
+<ul class="check">
+<li>Is the wordmark the supplied file, at the right color split, with clear space respected?</li>
+<li>Is the orange Pantone 172 C / #FA4616 — the same value as everything else we've printed?</li>
+<li>Is orange under about 10% of the surface, used as an accent rather than a field?</li>
+<li>Is all display type Archivo at weight 900, width 118 — never stretched by hand?</li>
+<li>If there's a Fraunces italic accent, is it one or two words at 1.2em?</li>
+<li>Is the script used for a tagline only, and nowhere a customer needs to read information?</li>
+<li>Does halal appear once, as a badge or a supporting line — never as the headline?</li>
+<li>Would a customer who doesn't eat halal still want this food after reading it?</li>
+<li>Is every claim, quote and review real and traceable?</li>
+<li>Are hours, phone numbers, addresses and the URL correct and current?</li>
+<li>Does every dish named actually exist on the menu at both locations today?</li>
+<li>For print: has a physical proof been approved on the actual substrate?</li>
+</ul>
+<div class="callout">
+<b>Open items for this version</b>
+<p><strong>1.</strong> Resolve the two oranges — Pantone 172 C vs #FA4616 on the website.<br/>
+<strong>2.</strong> Record the real script font name and license from the packaging file.<br/>
+<strong>3.</strong> Fix the descriptor punctuation on the bag, and confirm whether pizza belongs on it.<br/>
+<strong>4.</strong> Commission a stacked wordmark and a standalone mark for app icons, stickers and small formats.<br/>
+<strong>5.</strong> Replace the placeholder badge icons here with the line art from the packaging source file.</p>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="wrap">
+<p class="lg">Bite <span class="hot">More</span></p>
+<p>Brand Book v1.0 · August 2026 · Bite More Brands LLC<br/>
+    Questions or exceptions go through the brand owner before anything goes to print.</p>
+</div>
+</footer>
+</body>
+</html>

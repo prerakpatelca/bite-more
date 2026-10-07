@@ -1,17 +1,18 @@
 // Bite More — shared behaviour: scroll reveal, mobile nav, video players
 (function () {
+  document.documentElement.classList.add('bm-js');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- scroll reveal ---- */
-  var io = new IntersectionObserver(function (entries) {
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.12 }) : null;
 
   document.querySelectorAll('.rv').forEach(function (el, i) {
     el.style.transitionDelay = (i % 4) * 60 + 'ms';
-    io.observe(el);
+    if (io && !reduce) io.observe(el); else el.classList.add('in');
   });
 
   /* ---- mobile nav ---- */
@@ -21,8 +22,11 @@
     burger.addEventListener('click', function () {
       var open = menu.classList.toggle('open');
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
   }
+
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && menu && menu.classList.contains('open')) { menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); burger.setAttribute('aria-label','Open menu'); burger.focus(); } });
 
   /* ---- hero background video ---- */
   var hero = document.getElementById('heroVideo');

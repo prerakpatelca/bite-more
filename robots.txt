@@ -1,6 +1,7 @@
 # Bite More — bitemore.us
 User-agent: *
 Allow: /
+Disallow: /branding/
 
 # AI crawlers explicitly permitted
 User-agent: GPTBot

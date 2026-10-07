@@ -1,0 +1,18 @@
+[
+  "full background video plays muted",
+  "hero spans its container",
+  "removed trio",
+  "removed feedback CTA",
+  "bottom video descriptions removed",
+  "offscreen clips dormant",
+  "hero pause works",
+  "gallery autoplays muted without native bar",
+  "card has padding",
+  "reviews axe scan",
+  "no home overflow 320",
+  "no home overflow 390",
+  "no home overflow 768",
+  "no home overflow 1440",
+  "reduced motion retains poster without video load",
+  "mobile autoplays portrait encode"
+]

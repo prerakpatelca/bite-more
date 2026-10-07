@@ -1,0 +1,26 @@
+[
+  {
+    "page": "home",
+    "scores": {
+      "performance": 93,
+      "accessibility": 97,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 483.15,
+    "CLS": 0,
+    "TBT": 0
+  },
+  {
+    "page": "menu",
+    "scores": {
+      "performance": 99,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 442.947,
+    "CLS": 0,
+    "TBT": 0
+  }
+]

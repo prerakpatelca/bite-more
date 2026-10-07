@@ -1,0 +1,1 @@
+Muted, looping autoplay videos load when visible. Pause buttons and reduced-motion/data-saving poster fallback remain. No visible sound controls. The hero is a full background with desktop and portrait mobile variants. See VISUAL_REFRESH.md for the current behavior and tests.

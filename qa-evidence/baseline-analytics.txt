@@ -1,0 +1,28 @@
+======================================================================
+BITE MORE — ANALYTICS EVENT TESTS (jsdom, real pages, real clicks)
+======================================================================
+menu_view fires on /menu                                             PASS
+menu_view does NOT fire on homepage                                  PASS
+menu_view fires once only                                            PASS
+order_buckhead on Buckhead page order CTA                            PASS
+order_duluth NOT fired on Buckhead page                              PASS
+order_duluth on Duluth page order CTA                                PASS
+order_buckhead NOT fired on Duluth page                              PASS
+order_online_click accompanies location event                        PASS
+hero Order Now fires order_online_click with no location attributed  PASS
+homepage location cards attribute the right kitchen                  PASS
+phone_click Buckhead has location=buckhead                           PASS
+phone_click Duluth has location=duluth                               PASS
+directions_click Buckhead                                            PASS
+directions_click Duluth                                              PASS
+gift_card_click fires                                                PASS
+view_item fires on menu item page with real name                     PASS
+view_item does NOT fire on non-item pages                            PASS
+no purchase event from order click                                   PASS
+catering_lead NOT fired by clicking the mailto CTA                   PASS
+catering_lead fires from success callback                            PASS
+franchise_lead fires from success callback                           PASS
+rapid double click does not double-fire                              PASS
+location values are only buckhead/duluth/unknown                     PASS
+----------------------------------------------------------------------
+23/23 passed

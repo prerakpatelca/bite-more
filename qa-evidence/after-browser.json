@@ -1,0 +1,134 @@
+[
+  {
+    "page": "home",
+    "width": 390,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 55,
+    "storeLinks": 2,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "home",
+    "width": 1440,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 55,
+    "storeLinks": 2,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "menu",
+    "width": 390,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 106,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "menu",
+    "width": 1440,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 106,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "app",
+    "width": 390,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 41,
+    "storeLinks": 2,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "app",
+    "width": 1440,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 41,
+    "storeLinks": 2,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "buckhead",
+    "width": 390,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 63,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "buckhead",
+    "width": 1440,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 63,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "duluth",
+    "width": 390,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 63,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "duluth",
+    "width": 1440,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 63,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "catering",
+    "width": 390,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 46,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  },
+  {
+    "page": "catering",
+    "width": 1440,
+    "overflow": false,
+    "h1Count": 1,
+    "links": 46,
+    "storeLinks": 0,
+    "main": 1,
+    "errors": [],
+    "violations": []
+  }
+]

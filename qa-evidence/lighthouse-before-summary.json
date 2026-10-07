@@ -1,0 +1,62 @@
+[
+  {
+    "page": "home",
+    "scores": {
+      "performance": 90,
+      "accessibility": 97,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2104.968,
+    "CLS": 0,
+    "TBT": 0
+  },
+  {
+    "page": "menu",
+    "scores": {
+      "performance": 97,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2101.138,
+    "CLS": 0,
+    "TBT": 0
+  },
+  {
+    "page": "app",
+    "scores": {
+      "performance": 97,
+      "accessibility": 97,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 1950.88,
+    "CLS": 0,
+    "TBT": 0
+  },
+  {
+    "page": "buckhead",
+    "scores": {
+      "performance": 94,
+      "accessibility": 97,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2102.604,
+    "CLS": 0,
+    "TBT": 0
+  },
+  {
+    "page": "duluth",
+    "scores": {
+      "performance": 94,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2176.987,
+    "CLS": 0,
+    "TBT": 0
+  }
+]

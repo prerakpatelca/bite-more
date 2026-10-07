@@ -1,0 +1,90 @@
+[
+  {
+    "name": "mobile menu opens",
+    "pass": true
+  },
+  {
+    "name": "app link visible in expanded menu",
+    "pass": true
+  },
+  {
+    "name": "Escape closes menu",
+    "pass": true
+  },
+  {
+    "name": "Escape restores focus",
+    "pass": true
+  },
+  {
+    "name": "primary order URL unchanged",
+    "pass": true
+  },
+  {
+    "name": "menu search filters dishes",
+    "pass": true
+  },
+  {
+    "name": "empty search feedback",
+    "pass": true
+  },
+  {
+    "name": "empty search hides all items",
+    "pass": true
+  },
+  {
+    "name": "category jump resets search",
+    "pass": true
+  },
+  {
+    "name": "category anchor scrolls",
+    "pass": true
+  },
+  {
+    "name": "both official stores linked",
+    "pass": true
+  },
+  {
+    "name": "obsolete waitlist removed",
+    "pass": true
+  },
+  {
+    "name": "store badge hit target",
+    "pass": true
+  },
+  {
+    "name": "app download click tracked once",
+    "pass": true
+  },
+  {
+    "name": "no purchase event for app click",
+    "pass": true
+  },
+  {
+    "name": "homepage no overflow at 320",
+    "pass": true
+  },
+  {
+    "name": "homepage no overflow at 768",
+    "pass": true
+  },
+  {
+    "name": "homepage no overflow at 1440",
+    "pass": true
+  },
+  {
+    "name": "menu readable without JS",
+    "pass": true
+  },
+  {
+    "name": "mobile nav fallback without JS",
+    "pass": true
+  },
+  {
+    "name": "device-specific CTA play.google.com",
+    "pass": true
+  },
+  {
+    "name": "device-specific CTA apps.apple.com",
+    "pass": true
+  }
+]

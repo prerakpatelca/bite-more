@@ -17,6 +17,8 @@
 
   /* ---- normalised location value: only ever "buckhead" | "duluth" | "unknown" ---- */
   function normLocation(el) {
+    var explicit = el.getAttribute('data-bm-location');
+    if (explicit === 'buckhead' || explicit === 'duluth') return explicit;
     var hay = ((el.getAttribute('href') || '') + ' ' +
                (el.textContent || '') + ' ' +
                (el.getAttribute('aria-label') || '')).toLowerCase();

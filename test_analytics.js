@@ -5,7 +5,7 @@ const { JSDOM } = require('jsdom');
 const fs = require('fs');
 const path = require('path');
 
-const SITE = '/mnt/user-data/outputs/bitemore-production';
+const SITE = __dirname;
 const analytics = fs.readFileSync(path.join(SITE, 'assets/analytics.js'), 'utf8');
 
 function load(page) {
@@ -88,17 +88,41 @@ test('order_online_click accompanies location event', () => {
   const g = last(w, 'order_online_click');
   return g && g.location === 'duluth' ? true : 'missing or wrong: ' + JSON.stringify(g);
 });
-test('homepage location CTAs fire select_location, not a false order', () => {
+// The hero now carries one "Order Now" button that goes straight to
+// order.online, so it IS a real order click — but the homepage cannot know
+// which kitchen, so it must not be attributed to either one. The per-location
+// cards lower down are what carry the location.
+test('hero Order Online fires order_online_click with no location attributed', () => {
   const w = load('index.html');
-  const bh = [...w.document.querySelectorAll('a')].find(a => /order buckhead/i.test(a.textContent));
-  const dl = [...w.document.querySelectorAll('a')].find(a => /order duluth/i.test(a.textContent));
-  if (!bh || !dl) return 'CTAs not found';
-  bh.dispatchEvent(new w.Event('click', { bubbles: true }));
-  dl.dispatchEvent(new w.Event('click', { bubbles: true }));
+  const cta = [...w.document.querySelectorAll('a')]
+    .find(a => /^order online$/i.test(a.textContent.trim()));
+  if (!cta) return 'hero Order Online button not found';
+  if (!/order\.online/.test(cta.getAttribute('href') || '')) return 'Order Now does not point at order.online';
+  cta.dispatchEvent(new w.Event('click', { bubbles: true }));
   const evs = events(w);
-  const sel = (w.dataLayer || []).filter(e => e.event === 'select_location').map(e => e.location);
-  if (evs.includes('order_online_click')) return 'inflated order intent on a navigation click';
-  return sel.includes('buckhead') && sel.includes('duluth') ? true : 'got ' + JSON.stringify(sel);
+  if (!evs.includes('order_online_click')) return 'no order_online_click, got ' + JSON.stringify(evs);
+  if (evs.includes('order_buckhead') || evs.includes('order_duluth'))
+    return 'homepage guessed a location it cannot know';
+  const e = last(w, 'order_online_click');
+  return (e && e.location === 'unknown') ? true : 'location=' + JSON.stringify(e && e.location);
+});
+
+test('homepage location cards attribute the right kitchen', () => {
+  const w = load('index.html');
+  const pick = (re) => [...w.document.querySelectorAll('a[href*="order.online"]')]
+    .find(a => re.test(a.textContent));
+  const bh = pick(/order from buckhead/i);
+  const dl = pick(/order from duluth/i);
+  if (!bh || !dl) return 'location card CTAs not found';
+  bh.dispatchEvent(new w.Event('click', { bubbles: true }));
+  if (last(w, 'order_online_click').location !== 'buckhead') return 'Buckhead card mis-attributed';
+  if (events(w).includes('order_duluth')) return 'Buckhead card leaked a Duluth order';
+  const w2 = load('index.html');
+  const dl2 = [...w2.document.querySelectorAll('a[href*="order.online"]')]
+    .find(a => /order from duluth/i.test(a.textContent));
+  dl2.dispatchEvent(new w2.Event('click', { bubbles: true }));
+  if (last(w2, 'order_online_click').location !== 'duluth') return 'Duluth card mis-attributed';
+  return events(w2).includes('order_buckhead') ? 'Duluth card leaked a Buckhead order' : true;
 });
 
 // ---- phone -----------------------------------------------------------------

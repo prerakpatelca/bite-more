@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-10-06",
+  "shared": "https://order.online/business/bite-more-13060526",
+  "stores": {
+    "buckhead": "https://order.online/business/13060526/store/bite-more-roswell-rd-30601156?pickup=true",
+    "duluth": "https://order.online/business/13060526/store/bite-more-duluth-36021616?pickup=true"
+  },
+  "observedPrices": {
+    "Alfredo Pasta": {
+      "buckhead": 13.99,
+      "duluth": 14.99
+    },
+    "Cajun Alfredo": {
+      "buckhead": 21.99,
+      "duluth": 19.99
+    },
+    "Cajun Chicken Alfredo Fettuccine": {
+      "buckhead": 16.99,
+      "duluth": 16.99
+    },
+    "Mac Attack Fries": {
+      "buckhead": 12,
+      "duluth": 12
+    }
+  }
+}

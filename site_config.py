@@ -15,8 +15,8 @@ NETLIFY_HOST = "https://bite-more.netlify.app"
 
 # Ordering. One URL today; per-location URLs go here when they exist.
 ORDER_URL = "https://order.online/business/bite-more-13060526"
-ORDER_URL_BUCKHEAD = ORDER_URL   # TODO: replace when a Buckhead-specific URL exists
-ORDER_URL_DULUTH = ORDER_URL     # TODO: replace when a Duluth-specific URL exists
+ORDER_URL_BUCKHEAD = "https://order.online/business/13060526/store/bite-more-roswell-rd-30601156?pickup=true"   # TODO: replace when a Buckhead-specific URL exists
+ORDER_URL_DULUTH = "https://order.online/business/13060526/store/bite-more-duluth-36021616?pickup=true"     # TODO: replace when a Duluth-specific URL exists
 
 # ---------------------------------------------------------------------------
 # LOCATIONS — approved values, confirmed by the owner 2026-08-13
@@ -92,7 +92,6 @@ FORBIDDEN_STRINGS = [
     "(321) 333-2984", "321-333-2984", "321 333 2984", "3213332984", "+13213332984",
     "PLACE_ID_BUCKHEAD", "PLACE_ID_DULUTH",
     "G-XXXXXXXXXX", "'PIXEL_ID'", '"PIXEL_ID"',   # placeholder VALUES, not the config key names
-    "order.online/business/13060526",   # numeric-only order URL, superseded
 ]
 
 # ---------------------------------------------------------------------------
@@ -114,12 +113,13 @@ TRACKED_EVENTS = [
 # much smaller sample, so these are labelled "delivery ratings" everywhere and
 # are deliberately NOT emitted as aggregateRating structured data.
 # ---------------------------------------------------------------------------
-RATING_DISPLAY = "4.3"
-RATING_COUNT_DISPLAY = "1,000+"
-RATING_LABEL = "delivery ratings"
+RATING_DISPLAY = "4.7"
+RATING_COUNT_DISPLAY = "1,159"
+RATING_LABEL = "Google reviews"
 EMIT_AGGREGATE_RATING = False
 
-NOINDEX_PAGES = {"coming-soon.html", "tags/tagliatelle.html", "404.html"}
+NOINDEX_PAGES = {"team.html", "thanks.html", "coming-soon.html", "tags/tagliatelle.html", "404.html",
+                 "branding/index.html"}   # internal brand book — not for search
 
 
 def location(slug):

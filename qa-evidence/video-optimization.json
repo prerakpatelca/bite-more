@@ -1,0 +1,80 @@
+[
+  {
+    "file": "location-duluth.mp4",
+    "bytes": 1534032,
+    "duration": 11.0,
+    "audio": false
+  },
+  {
+    "file": "mac-attack-fries.mp4",
+    "bytes": 160507,
+    "duration": 1.708333,
+    "audio": false
+  },
+  {
+    "file": "catering.mp4",
+    "bytes": 949702,
+    "duration": 12.0,
+    "audio": false
+  },
+  {
+    "file": "hero.mp4",
+    "bytes": 980964,
+    "duration": 12.0,
+    "audio": false
+  },
+  {
+    "file": "wings-toss.mp4",
+    "bytes": 524331,
+    "duration": 10.958333,
+    "audio": false
+  },
+  {
+    "file": "review-3.mp4",
+    "bytes": 8901034,
+    "duration": 80.833333,
+    "audio": true
+  },
+  {
+    "file": "hero-mobile.mp4",
+    "bytes": 530236,
+    "duration": 12.0,
+    "audio": false
+  },
+  {
+    "file": "oklahoma-smash.mp4",
+    "bytes": 1236411,
+    "duration": 17.0,
+    "audio": false
+  },
+  {
+    "file": "review-2.mp4",
+    "bytes": 4220050,
+    "duration": 50.0,
+    "audio": true
+  },
+  {
+    "file": "location-buckhead.mp4",
+    "bytes": 1809112,
+    "duration": 17.0,
+    "audio": false
+  },
+  {
+    "file": "smash-press.mp4",
+    "bytes": 1391815,
+    "duration": 21.0,
+    "audio": false
+  },
+  {
+    "file": "review-1.mp4",
+    "bytes": 3094952,
+    "duration": 29.0,
+    "audio": true
+  },
+  {
+    "file": "cajun-alfredo.mp4",
+    "bytes": 774417,
+    "duration": 9.0,
+    "audio": false
+  }
+]

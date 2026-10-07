@@ -1,0 +1,19 @@
+==============================================================
+BITE MORE — ANALYTICS VERIFICATION
+==============================================================
+TOTAL HTML PAGES:            111
+PAGES WITH GTM HEAD:         111
+PAGES WITH GTM NOSCRIPT:     111
+PAGES MISSING GTM HEAD       0   PASS
+PAGES MISSING GTM NOSCRIPT   0   PASS
+DUPLICATE GTM INSTALLATIONS  0   PASS
+WRONG GTM/GA4 IDs            0   PASS
+HARDCODED DUPLICATE GA4      0   PASS
+--------------------------------------------------------------
+dataLayer safe init:         PASS
+bmTrack helper:              PASS
+No gtag.js in event layer:   PASS
+No fake purchase event:      PASS
+No Meta Pixel placeholder:   PASS
+Events wired:                PASS
+==============================================================

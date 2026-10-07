@@ -1,0 +1,17 @@
+{
+  "name": "bitemore-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:analytics": "node test_analytics.js",
+    "test:browser": "node tests/browser-qa.cjs",
+    "test:flows": "node tests/flows.cjs",
+    "minify:css": "node tests/minify-css.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.2",
+    "playwright": "^1.63.0",
+    "@axe-core/playwright": "^4.13.0",
+    "lightningcss": "^1.33.0"
+  }
+}

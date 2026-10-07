@@ -12,10 +12,11 @@ import os, re, sys, json, glob, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from site_config import (PRODUCTION_HOST, NETLIFY_HOST, LOCATIONS, FORBIDDEN_STRINGS,
                          NOINDEX_PAGES, clean_url, EMIT_AGGREGATE_RATING)
+NOINDEX_PAGES = set(NOINDEX_PAGES) | {"branding/index.html"}
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
-HTML = sorted(glob.glob("**/*.html", recursive=True))
+HTML = sorted(f for f in glob.glob("**/*.html", recursive=True) if not f.startswith("dist/"))
 SRC = [p for p in glob.glob("*.py")]
 results, blockers = [], []
 
@@ -106,9 +107,14 @@ check("Sitemap vs canonicals", not conf and not dupes and not inx and not dothtm
 
 # ---------------------------------------------------------------- 5 robots
 rb = open("robots.txt", encoding="utf-8").read() if os.path.exists("robots.txt") else ""
-check("robots.txt", "Sitemap: %s/sitemap.xml" % PRODUCTION_HOST in rb
-      and "Disallow: /" not in rb.replace("Disallow: /\n", "DISALLOWALL")
-      and ".css" not in rb and ".js" not in rb, "")
+# Only a bare "Disallow: /" blocks the whole site. "Disallow: /branding/" is fine.
+rb_lines = [l.strip() for l in rb.split("\n")]
+blocks_all = any(l == "Disallow: /" for l in rb_lines)
+blocks_assets = any(l.startswith("Disallow:") and (".css" in l or ".js" in l or "/assets" in l)
+                    for l in rb_lines)
+check("robots.txt", ("Sitemap: %s/sitemap.xml" % PRODUCTION_HOST in rb)
+      and not blocks_all and not blocks_assets,
+      "blocks_all=%s blocks_assets=%s" % (blocks_all, blocks_assets))
 
 # ---------------------------------------------------------------- 6 titles / meta / h1
 titles, descs = collections.Counter(), collections.Counter()
@@ -153,7 +159,7 @@ for f in HTML:
         if t in ("", "."):
             t = "index.html"
         cands = {t, t + ".html", os.path.join(t, "index.html").replace("\\", "/")}
-        if not (cands & allpaths):
+        if not (cands & allpaths) and not os.path.isfile(t):
             broken.append("%s -> %s" % (f, h))
 check("Internal links", not broken, "%d broken: %s" % (len(broken), broken[:4]))
 

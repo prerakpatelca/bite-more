@@ -1,0 +1,14 @@
+[
+  {
+    "page": "home",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 3155.9984999999997,
+    "CLS": 0.01547992186957889,
+    "TBT": 0
+  }
+]
