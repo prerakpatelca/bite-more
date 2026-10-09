@@ -2,25 +2,37 @@
   {
     "page": "home",
     "scores": {
-      "performance": 93,
-      "accessibility": 97,
+      "performance": 99,
+      "accessibility": 100,
       "best-practices": 96,
       "seo": 100
     },
-    "LCP": 483.15,
-    "CLS": 0,
+    "LCP": 668.1089999999999,
+    "CLS": 0.04351760217923269,
     "TBT": 0
   },
   {
     "page": "menu",
     "scores": {
-      "performance": 99,
-      "accessibility": 96,
+      "performance": 100,
+      "accessibility": 100,
       "best-practices": 96,
       "seo": 100
     },
-    "LCP": 442.947,
-    "CLS": 0,
+    "LCP": 563.4845,
+    "CLS": 0.02723053131723643,
+    "TBT": 0
+  },
+  {
+    "page": "duluth",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 565.7239999999999,
+    "CLS": 0.0002414338042066112,
     "TBT": 0
   }
 ]

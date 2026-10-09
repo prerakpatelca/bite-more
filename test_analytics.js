@@ -88,23 +88,14 @@ test('order_online_click accompanies location event', () => {
   const g = last(w, 'order_online_click');
   return g && g.location === 'duluth' ? true : 'missing or wrong: ' + JSON.stringify(g);
 });
-// The hero now carries one "Order Now" button that goes straight to
-// order.online, so it IS a real order click — but the homepage cannot know
-// which kitchen, so it must not be attributed to either one. The per-location
-// cards lower down are what carry the location.
-test('hero Order Online fires order_online_click with no location attributed', () => {
+// Opening the location chooser is intent; an outbound order click happens later.
+test('hero Order Online opens selector without counting an outbound order', () => {
   const w = load('index.html');
-  const cta = [...w.document.querySelectorAll('a')]
-    .find(a => /^order online$/i.test(a.textContent.trim()));
+  const cta = [...w.document.querySelectorAll('a')].find(a => /^order online$/i.test(a.textContent.trim()));
   if (!cta) return 'hero Order Online button not found';
-  if (!/order\.online/.test(cta.getAttribute('href') || '')) return 'Order Now does not point at order.online';
   cta.dispatchEvent(new w.Event('click', { bubbles: true }));
   const evs = events(w);
-  if (!evs.includes('order_online_click')) return 'no order_online_click, got ' + JSON.stringify(evs);
-  if (evs.includes('order_buckhead') || evs.includes('order_duluth'))
-    return 'homepage guessed a location it cannot know';
-  const e = last(w, 'order_online_click');
-  return (e && e.location === 'unknown') ? true : 'location=' + JSON.stringify(e && e.location);
+  return evs.filter(e => e === 'order_location_selector_open').length === 1 && !evs.includes('order_online_click') && !evs.includes('order_buckhead') && !evs.includes('order_duluth') ? true : JSON.stringify(evs);
 });
 
 test('homepage location cards attribute the right kitchen', () => {

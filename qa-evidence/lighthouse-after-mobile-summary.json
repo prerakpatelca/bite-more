@@ -1,0 +1,38 @@
+[
+  {
+    "page": "home",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2861.2470000000003,
+    "CLS": 0.01735041242881967,
+    "TBT": 0
+  },
+  {
+    "page": "menu",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2333.9355,
+    "CLS": 0,
+    "TBT": 0
+  },
+  {
+    "page": "duluth",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 2267.322,
+    "CLS": 0,
+    "TBT": 0
+  }
+]

@@ -2,13 +2,13 @@
   {
     "page": "home",
     "scores": {
-      "performance": 100,
+      "performance": 99,
       "accessibility": 100,
       "best-practices": 96,
       "seo": 100
     },
-    "LCP": 628.379,
-    "CLS": 0,
+    "LCP": 625.019,
+    "CLS": 0.01973134755578358,
     "TBT": 0
   },
   {
@@ -19,8 +19,20 @@
       "best-practices": 96,
       "seo": 100
     },
-    "LCP": 445.91200000000003,
+    "LCP": 529.1965,
     "CLS": 0.02723053131723643,
+    "TBT": 0
+  },
+  {
+    "page": "duluth",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "LCP": 525.796,
+    "CLS": 0.0002414338042066112,
     "TBT": 0
   }
 ]

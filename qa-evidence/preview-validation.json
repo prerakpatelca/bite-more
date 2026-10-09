@@ -1,8 +1,26 @@
 {
-  "homeNavigation": true,
-  "menuNavigation": true,
-  "menuSearch": true,
-  "appNavigation": true,
-  "bothStores": true,
-  "trackingDisabled": true
+  "videoPlays": true,
+  "renderedHead": true,
+  "heroPoster": true,
+  "errors": [],
+  "menu": {
+    "overflow": false,
+    "brokenImages": 0,
+    "description": true
+  },
+  "places/marietta": {
+    "overflow": false,
+    "brokenImages": 0,
+    "description": true
+  },
+  "menu/truffle-mushroom-pasta": {
+    "overflow": false,
+    "brokenImages": 0,
+    "description": true
+  },
+  "app": {
+    "overflow": false,
+    "brokenImages": 0,
+    "description": true
+  }
 }

@@ -6,6 +6,7 @@
   document.querySelectorAll('[data-bm-media]').forEach(wrap => {
     const video = wrap.querySelector('video'), button = wrap.querySelector('.bm-media-play');
     let loaded=false, visible=false, userPaused=false, manual=false;
+    if(wrap.dataset.bmMedia === 'hero') video.poster = matchMedia('(max-width: 820px)').matches ? 'assets/img/video/hero-mobile.webp' : 'assets/img/video/hero.webp';
     video.muted=true;video.loop=true;video.controls=false;
     const load=()=>{
       if(loaded)return;

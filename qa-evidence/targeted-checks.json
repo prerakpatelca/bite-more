@@ -1,0 +1,111 @@
+{
+  "tests": [
+    "no overflow home 320",
+    "valid rendered head home 320",
+    "no overflow menu 320",
+    "valid rendered head menu 320",
+    "no overflow places/marietta 320",
+    "valid rendered head places/marietta 320",
+    "no overflow places/suwanee 320",
+    "valid rendered head places/suwanee 320",
+    "no overflow tags/high-protein 320",
+    "valid rendered head tags/high-protein 320",
+    "no overflow menu/truffle-mushroom-pasta 320",
+    "valid rendered head menu/truffle-mushroom-pasta 320",
+    "no overflow menu/truffle-mushroom-rigatoni 320",
+    "valid rendered head menu/truffle-mushroom-rigatoni 320",
+    "no overflow home 430",
+    "valid rendered head home 430",
+    "axe ",
+    "no overflow menu 430",
+    "valid rendered head menu 430",
+    "axe menu",
+    "no overflow places/marietta 430",
+    "valid rendered head places/marietta 430",
+    "axe places/marietta",
+    "no overflow places/suwanee 430",
+    "valid rendered head places/suwanee 430",
+    "axe places/suwanee",
+    "no overflow tags/high-protein 430",
+    "valid rendered head tags/high-protein 430",
+    "axe tags/high-protein",
+    "no overflow menu/truffle-mushroom-pasta 430",
+    "valid rendered head menu/truffle-mushroom-pasta 430",
+    "axe menu/truffle-mushroom-pasta",
+    "no overflow menu/truffle-mushroom-rigatoni 430",
+    "valid rendered head menu/truffle-mushroom-rigatoni 430",
+    "axe menu/truffle-mushroom-rigatoni",
+    "no overflow home 768",
+    "valid rendered head home 768",
+    "no overflow menu 768",
+    "valid rendered head menu 768",
+    "no overflow places/marietta 768",
+    "valid rendered head places/marietta 768",
+    "no overflow places/suwanee 768",
+    "valid rendered head places/suwanee 768",
+    "no overflow tags/high-protein 768",
+    "valid rendered head tags/high-protein 768",
+    "no overflow menu/truffle-mushroom-pasta 768",
+    "valid rendered head menu/truffle-mushroom-pasta 768",
+    "no overflow menu/truffle-mushroom-rigatoni 768",
+    "valid rendered head menu/truffle-mushroom-rigatoni 768",
+    "no overflow home 1440",
+    "valid rendered head home 1440",
+    "no overflow menu 1440",
+    "valid rendered head menu 1440",
+    "no overflow places/marietta 1440",
+    "valid rendered head places/marietta 1440",
+    "no overflow places/suwanee 1440",
+    "valid rendered head places/suwanee 1440",
+    "no overflow tags/high-protein 1440",
+    "valid rendered head tags/high-protein 1440",
+    "no overflow menu/truffle-mushroom-pasta 1440",
+    "valid rendered head menu/truffle-mushroom-pasta 1440",
+    "no overflow menu/truffle-mushroom-rigatoni 1440",
+    "valid rendered head menu/truffle-mushroom-rigatoni 1440",
+    "two truffle dishes found",
+    "selector open event once",
+    "no outbound order event for selector",
+    "keyboard close returns focus",
+    "selected Duluth event once",
+    "outbound Duluth event once",
+    "catering intent not confirmed lead"
+  ],
+  "facts": [
+    {
+      "page": "home",
+      "width": 430,
+      "violations": 0
+    },
+    {
+      "page": "menu",
+      "width": 430,
+      "violations": 0
+    },
+    {
+      "page": "places/marietta",
+      "width": 430,
+      "violations": 0
+    },
+    {
+      "page": "places/suwanee",
+      "width": 430,
+      "violations": 0
+    },
+    {
+      "page": "tags/high-protein",
+      "width": 430,
+      "violations": 0
+    },
+    {
+      "page": "menu/truffle-mushroom-pasta",
+      "width": 430,
+      "violations": 0
+    },
+    {
+      "page": "menu/truffle-mushroom-rigatoni",
+      "width": 430,
+      "violations": 0
+    }
+  ]
+}

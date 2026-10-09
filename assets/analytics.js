@@ -55,11 +55,20 @@
     var href = el.getAttribute('href') || '';
     var loc = normLocation(el);
 
+    if (href === 'https://order.online/business/bite-more-13060526' && document.querySelector('#bm-kitchen-dialog') && !el.dataset.bmSelectorBypass) {
+      bmTrack('order_location_selector_open', { placement: document.body.getAttribute('data-bm-page-type') || 'page' });
+      return;
+    }
     if (href.indexOf('order.online') > -1) {
+      if (loc !== 'unknown' && el.closest('#bm-kitchen-dialog')) bmTrack('select_location', { location: loc });
       bmTrack('order_online_click', { location: loc, order_type: 'direct' });
       if (loc === 'buckhead') bmTrack('order_buckhead', { location: 'buckhead', order_type: 'direct' });
       if (loc === 'duluth')   bmTrack('order_duluth',   { location: 'duluth',   order_type: 'direct' });
       return;                                  // never blocks navigation
+    }
+    if (href.indexOf('mailto:') === 0 && /catering/.test(location.pathname)) {
+      bmTrack('catering_inquiry_click', { channel: 'email', location: loc });
+      return;
     }
     if (href.indexOf('tel:') === 0) {
       bmTrack('phone_click', { location: loc });

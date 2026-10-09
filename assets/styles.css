@@ -971,3 +971,6 @@ html:not(.bm-js) .bm-hero-background video{display:block}html:not(.bm-js) .bm-he
 #popular .bm-card-action{margin-top:auto!important;padding-top:18px}
 @media(max-width:820px){#popular .pop-row{gap:20px}#popular .pop{display:grid;grid-template-columns:116px minmax(0,1fr);height:auto}#popular .pop img{height:100%;aspect-ratio:auto;object-fit:cover}#popular .pop-txt{padding:20px!important}#popular .bm-card-action{padding-top:12px}}
 @media(max-width:380px){#popular .pop{grid-template-columns:96px minmax(0,1fr)}}
+
+/* SEO revision: clear hero identity, generous content spacing. */
+.bm-hero-category{display:block;font-family:var(--font-body,Arial,sans-serif);font-size:clamp(14px,1.6vw,19px);font-weight:500;line-height:1.5;letter-spacing:0;margin-top:20px;max-width:36em}.pop-txt{padding:24px}.pop-grid{gap:24px}.sec p{line-height:1.7}@media(max-width:600px){.pop-txt{padding:20px}.pop-grid{gap:20px}.bm-hero-category{margin-top:16px}}
